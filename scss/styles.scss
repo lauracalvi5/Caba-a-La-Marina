@@ -8,12 +8,11 @@ $colors: (
   subtext: #221400,
   "button": #ffffff,
   "button-bg": #221400,
-
 );
 
 $font-stack: 'Quicksand', 'Italiana', 'Italianno', sans-serif;
 $font-sizes: (
-  
+  // Aquí puedes agregar los tamaños de fuente que necesites
 );
 
 $line-heights: (
@@ -57,7 +56,6 @@ $heights: (
     color: $bg-color;
   }
 }
-  
 
 @mixin font-style($tag, $font-family: $font-stack) {
   font-family: $font-family;
@@ -77,8 +75,7 @@ $heights: (
   margin: auto;
   font-size: map-get($font-sizes, $size);
 }
-  
-  
+
 /* Extend */
 %default-text {
   font-family: $font-stack;
@@ -89,25 +86,27 @@ $heights: (
   @extend %default-text;
   font-weight: 500;
 }
+
 %centered-text {
-    text-align: center;
-    display: block;
-    margin: auto;
-  }
+  text-align: center;
+  display: block;
+  margin: auto;
+}
 
- %centered-block {
-    text-align: center;
-    display: block;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+%centered-block {
+  text-align: center;
+  display: block;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  %flex-center {
-    display: flex;
-    align-items: center;
-  }
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
 /* General Styles */
 * {
   margin: 0;
@@ -128,7 +127,7 @@ header {
   position: relative;
   background-color: map-get($colors, background);
   margin: 0 auto;
-  width: 100vw; // Make the header take full viewport width
+  width: 100vw;
   padding: 0;
   text-align: center;
   @include flex-center(row, space-between, center);
@@ -147,13 +146,12 @@ header {
   }
 
   nav {
-    width: 100%; // Asegúrate de que el contenedor del menú ocupe todo el ancho disponible
+    width: 100%;
     display: flex;
-    justify-content: flex-end; // Mueve todo el conjunto hacia la derecha
+    justify-content: flex-end;
     align-items: center;
     left: -30px;
-        
-  
+    
     ul.navbar-nav {
       list-style: none;
       margin: 0;
@@ -163,7 +161,6 @@ header {
 
       li {
         margin-left: 15px;
-
 
         &:first-child {
           margin-left: 0;
@@ -192,11 +189,10 @@ header {
 // Portada Styles
 #portada {
   position: relative;
-  background-size: cover; /* Ensure the image covers the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  height: 80vh; /* Set a height to ensure the container is visible */
-  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
 }
 
 .overlay {
@@ -205,32 +201,28 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(148, 141, 131, 0.5); /* Apply 50% opacity with color #948D83 */
+  background-color: rgba(148, 141, 131, 0.5);
 }
 
 .cabana-text-container {
   position: relative;
-  z-index: 1; /* Ensure the text is above the overlay */
+  z-index: 1;
   text-align: center;
   margin-top: 80px;
 }
 
-
-
-/* Cabaña La Marina */
 .cabana-title {
   width: 100%;
   height: auto;
   margin: 0 auto; 
-  @include font-style('h1', 'Italiana');
+  font-family: 'Italiana';
   font-size: 100px;
   line-height: 150%;
-  color: map-get($colors, secondary );
+  color: map-get($colors, secondary);
 }
 
-/* Cría y selección de ganado Breaford */
 .cabana-subtitle {
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto;
   width: 100%;
   height: auto;
   margin-bottom: 30px;
@@ -238,7 +230,7 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
-  color: map-get($colors,  secondary);
+  color: map-get($colors, secondary);
 }
 
 /* Button */
@@ -248,7 +240,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; // Ensure text is centered
+  text-align: center;
   line-height: 81px;
   font-size: 24px;
   margin: 20px auto;
@@ -257,24 +249,68 @@ header {
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
+  header {
+    .navbar-brand.logo {
+      width: 40px;
+      margin-right: 20px;
+      margin-left: 20px;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    nav {
+      ul.navbar-nav {
+        li a {
+          padding: 8px 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
   #portada {
-    height: auto; /* Adjust height for mobile */
+    height: auto;
+    padding: 20px;
+  }
+
+  .cabana-text-container {
+    margin-top: 20px;
   }
 
   .cabana-title {
-    font-size: 50px; /* Adjust font size for mobile */
+    font-size: 45px;
+    margin-bottom: 20px;
   }
 
   .cabana-subtitle {
-    font-size: 30px; /* Adjust font size for mobile */
+    font-size: 25px;
+    margin-bottom: 20px;
   }
 
   .button {
-    width: 100%;
-    height: auto;
-    font-size: 18px; /* Adjust font size for mobile */
-    line-height: normal;
-    padding: 10px; /* Add padding for better touch targets */
+    width: auto;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 15px;
+    .footer-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer-column {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      justify-content: center;
+    }
   }
 }
 
@@ -299,6 +335,7 @@ footer {
 .logo-Braford img {
   max-width: 150px;
 }
+
 .logo img {
   max-width: 250px;
 }
@@ -338,14 +375,6 @@ footer {
   color: #000;
 }
 
-/*.footer-bottom {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-}*/
-
 .copyright {
   font-size: 14px;
   color: #000;
@@ -358,5 +387,11 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

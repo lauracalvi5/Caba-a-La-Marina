@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* Mixins */
+/* Extend */
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  width: 100%;
+  max-width: 1350px;
+}
+
+header {
+  position: relative;
+  background-color: #948D83;
+  margin: 0 auto;
+  width: 100vw;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .navbar-brand.logo {
+  width: 50px;
+  margin-right: 450px;
+  height: auto;
+  margin-left: 30px;
+}
+header .navbar-brand.logo img {
+  width: 97px;
+  height: 100px;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  left: -30px;
+}
+header nav ul.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+header nav ul.navbar-nav li {
+  margin-left: 15px;
+}
+header nav ul.navbar-nav li:first-child {
+  margin-left: 0;
+}
+header nav ul.navbar-nav li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Quicksand";
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #000000;
+}
+header nav ul.navbar-nav li a:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+
+#portada {
+  position: relative;
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 80vh; /* Set a height to ensure the container is visible */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(148, 141, 131, 0.5); /* Apply 50% opacity with color #948D83 */
+}
+
+.cabana-text-container {
+  position: relative;
+  z-index: 1; /* Ensure the text is above the overlay */
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Cabaña La Marina */
+.cabana-title {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Italiana";
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-size: 100px;
+  line-height: 150%;
+  color: #221400;
+}
+
+/* Cría y selección de ganado Breaford */
+.cabana-subtitle {
+  margin: 0 auto; /* Center horizontally */
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  font-family: "Italianno";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  color: #221400;
+}
+
+/* Button */
+.button {
+  width: 339px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 81px;
+  font-size: 24px;
+  margin: 20px auto;
+  padding: 0px 10px;
+  background: #221400;
+  color: #ffffff;
+  border-color: #221400;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #221400;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  #portada {
+    height: auto; /* Adjust height for mobile */
+  }
+  .cabana-title {
+    font-size: 50px; /* Adjust font size for mobile */
+  }
+  .cabana-subtitle {
+    font-size: 30px; /* Adjust font size for mobile */
+  }
+  .button {
+    width: 100%;
+    height: auto;
+    font-size: 18px; /* Adjust font size for mobile */
+    line-height: normal;
+    padding: 10px; /* Add padding for better touch targets */
+  }
+}
+footer {
+  position: relative;
+  margin-top: 40px;
+  background-color: #948D83;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 80px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.logo-Braford img {
+  max-width: 150px;
+}
+
+.logo img {
+  max-width: 250px;
+}
+
+.social-icons {
+  font-size: 24px;
+  display: flex;
+  gap: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.footer-column a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  color: #000;
+}
+
+/*.footer-bottom {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}*/
+.copyright {
+  font-size: 14px;
+  color: #000;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=styles.css.map */

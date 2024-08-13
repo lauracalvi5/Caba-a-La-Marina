@@ -192,7 +192,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 100vh;
 }
 
 .overlay {
@@ -272,7 +272,7 @@ header {
   }
 
   #portada {
-    height: auto;
+    height: 60vh;
     padding: 20px;
   }
 
@@ -291,9 +291,9 @@ header {
   }
 
   .button {
-    width: auto;
-    padding: 10px 20px;
-    font-size: 18px;
+    width: 250px;
+    padding: 2px;
+    font-size: 15px;
   }
 
   footer {

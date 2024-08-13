@@ -47,74 +47,74 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="public/contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
 </header>
 <!-- Sección Contacto -->
 <div class="col-sm">
-    <section id="contacto">
-      <h13>Contacto</h13>
-      <h14>Si tenés alguna consulta sobre nuestros animales, envianos tu mensaje. ¡Estamos para ayudarte!</h14>
-      <h14 class="h14"> Aquí tienes algunas formas de contactarnos.</h14>
-      <div class="form-container">
-        <div class="contact-form">
-          <h15>Envíanos un mensaje</h15>
-          <h16>Envíanos un mensaje y responderemos dentro de las 24 horas.</h16>
-          <form action="https://tu-dominio.com/submit-form" method="POST">
-            <div class="form-row">
+  <section id="contacto">
+    <h13>Contacto</h13>
+    <h14>Si tenés alguna consulta sobre nuestros animales, envianos tu mensaje. ¡Estamos para ayudarte!</h14>
+    <h14 class="h14">Aquí tenés algunas formas de contactarnos.</h14>
+    <div class="form-container">
+      <div class="contact-form">
+        <h15>Envíanos un mensaje</h15>
+        <h16>Envíanos un mensaje y responderemos dentro de las 24 horas.</h16>
+        <form action="/submit-form" method="POST">
+          <div class="form-row">
             <div class="input-field">
               <label for="nombre">Nombre <span class="required">*</span></label>
-              <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí">
+              <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
             </div>
             <div class="input-field">
               <label for="apellido">Apellido <span class="required">*</span></label>
-              <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido aquí">
+              <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido aquí" required>
             </div>
-            </div>
-            <div class="contact-row">
+          </div>
+          <div class="contact-row">
             <div class="input-field">
               <label for="telefono">Teléfono <span class="required">*</span></label>
-              <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono">
+              <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required>
             </div>
             <div class="input-field">
               <label for="email">Email <span class="required">*</span></label>
-              <input type="email" id="email" name="email" placeholder="email@address.com">
+              <input type="email" id="email" name="email" placeholder="email@address.com" required>
             </div>
-            </div>
-            <div class="input-field">
-              <label for="mensaje"></label>
-              <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
-            </div>
-            <div class="button-container">
-            <button>Enviar</button>
-            </div>
-          </form>
+          </div>
+          <div class="input-field">
+            <label for="mensaje"></label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+          </div>
+          <div class="button-container">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h17>Información de contacto</h17>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Capitán Sarmiento, Buenos Aires</span>
         </div>
-        <div class="contact-info">
-          <h17>Información de contacto</h17>
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Capitán Sarmiento, Buenos Aires</span>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <span>lamarina.braford@gmail.com</span>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-phone"></i>
-            <span>+54(3436)436890</span>
-          </div>
-          <div class="info-item">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-whatsapp"></i>
-          </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <span>lamarina.braford@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <span>+54(3436)436890</span>
+        </div>
+        <div class="info-item">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-whatsapp"></i>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
 
 
 <!-- Footer -->

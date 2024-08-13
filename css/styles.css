@@ -199,6 +199,234 @@ header nav ul.navbar-nav li a:hover {
     justify-content: center;
   }
 }
+/* Contacto */
+#contacto {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contacto h13 {
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-family: "Italiana";
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  line-height: 150%;
+  color: #221400;
+  border-bottom: 4px solid #948D83;
+}
+#contacto h14 {
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  font-weight: bold;
+}
+#contacto .h14 {
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+#contacto .form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 5px;
+}
+#contacto .form-container .contact-form {
+  order: 1;
+  flex: 2.5;
+  background: #948D83;
+  border: 2px solid #2e2c2a;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 600px;
+}
+#contacto .form-container .contact-info {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1.5;
+  background: #948D83;
+  border: 2px solid #2e2c2a;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 600px;
+}
+#contacto .form-container .contact-info .info-item:last-child {
+  margin-top: 40px;
+}
+#contacto .form-container .contact-info .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#contacto .form-container .contact-info .info-item i {
+  font-size: 20px;
+  color: #221400;
+  margin-right: 15px;
+}
+#contacto .form-container .contact-info .info-item span {
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+  color: #221400;
+  font-size: 16px;
+}
+#contacto .form-container .contact-info .info-item i {
+  margin-right: 8px;
+}
+#contacto .form-container h15 {
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-family: "Quicksand";
+  font-weight: bold;
+  color: #221400;
+  font-size: 30px;
+  justify-content: left;
+  margin-left: -400px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#contacto .form-container h16 {
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+  color: #221400;
+  margin-left: -240px;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+#contacto .form-container h17 {
+  position: relative;
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 31px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  font-family: "Quicksand";
+  font-weight: bold;
+  color: #221400;
+  font-size: 30px;
+}
+#contacto .form-container h17::after {
+  content: "";
+  display: block;
+  width: 130%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#contacto .form-container p {
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+#contacto .form-container form label {
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #221400;
+  margin-bottom: 5px;
+}
+#contacto .form-container form input, #contacto .form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2e2c2a;
+  border-radius: 4px;
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-size: 16px;
+  color: #221400;
+}
+#contacto .form-container form textarea {
+  height: 100px;
+  resize: vertical;
+}
+#contacto .form-container .button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 40px;
+}
+#contacto .form-container .button-container button {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0px 10px;
+  background: #221400;
+  color: #ffffff;
+  border-color: #221400;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+#contacto .form-container .button-container button:hover {
+  background-color: #ffffff;
+  color: #221400;
+}
+
+.form-row, .contact-row {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+.form-row .input-field, .contact-row .input-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contact-row {
+  margin-top: 20px;
+}
+
+#nombre, #apellido, #telefono, #email {
+  width: 45%;
+}
+
+.required {
+  color: red;
+}
+
 footer {
   position: relative;
   margin-top: 40px;

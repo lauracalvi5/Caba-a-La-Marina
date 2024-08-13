@@ -12,7 +12,7 @@ $colors: (
 
 $font-stack: 'Quicksand', 'Italiana', 'Italianno', sans-serif;
 $font-sizes: (
-  // Aquí puedes agregar los tamaños de fuente que necesites
+  "h13":50px,
 );
 
 $line-heights: (
@@ -313,6 +313,219 @@ header {
     }
   }
 }
+
+/* Contacto */
+#contacto {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h13 {
+    @include font-style("h13");
+    font-family: 'Italiana';
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 300px;
+    height: auto;
+    margin: 0 auto; 
+    line-height: 150%;
+    color: map-get($colors, secondary);
+    border-bottom: 4px solid map-get($colors, primary); 
+
+  }
+
+  h14 {
+    @include font-style("h14");
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .h14 {
+    @include font-style("h14");
+    margin-bottom: 40px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 5px;
+
+    .contact-form {
+      order: 1;
+      flex: 2.5;
+      background: map-get($colors, primary);
+      border: 2px solid  #2e2c2a;
+      border-radius: 8px;
+      padding: 20px;
+      min-height: 600px;
+      
+    }
+    .contact-info {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1.5;
+      background: map-get($colors, primary);
+      border: 2px solid #2e2c2a;
+      border-radius: 8px;
+      padding: 20px;
+      min-height: 600px;
+      
+      .info-item:last-child {
+        margin-top: 40px; 
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        i {
+          font-size: 20px;
+          color: map-get($colors, secondary);
+          margin-right: 15px;
+        }
+
+        span {
+          @include font-style("p");
+          color: map-get($colors, secondary);
+          font-size: 16px;
+        }
+      }
+
+      .info-item i {
+        margin-right: 8px; 
+      }
+    }
+
+      h15 {
+        @include font-style("h15");  
+        font-family: 'Quicksand';
+        font-weight: bold;
+        color: map-get($colors, secondary);
+        font-size: 30px;
+        justify-content: left;
+        margin-left: -400px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      h16 {
+        @include font-style("h16");  
+        width: map-get($widths, "h16");
+        height: map-get($heights, "h16");
+        color: map-get($colors, secondary);
+        margin-left: -240px;
+        white-space: nowrap;
+        margin-bottom: 15px;
+        
+      }
+
+      h17 {
+        position: relative;
+        @include font-style("h17");
+        width: map-get($widths, "h17");
+        height: map-get($heights, "h17");
+        margin-bottom: 80px;
+        margin-top: 30px ;
+        font-family: 'Quicksand';
+        font-weight: bold;
+        color: map-get($colors, secondary);
+        font-size: 30px;
+      }
+
+      h17::after {
+        content: ""; 
+        display: block;
+        width: 130%; 
+        height: 1px; 
+        background-color: #000;
+        position: absolute;
+        bottom: -50px; 
+        left: 50%; 
+        transform: translateX(-50%);
+      }
+
+      p {
+        @include font-style("p");
+        margin-bottom: 20px;
+        margin-top: 0px;
+      }
+
+      form {
+
+          label {
+            font-family: $font-stack;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            color: map-get($colors, secondary);
+            margin-bottom: 5px;
+          }
+
+          input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #2e2c2a;
+            border-radius: 4px;
+            font-family: $font-stack;
+            font-size: 16px;
+            color: map-get($colors, secondary);
+          }
+
+          textarea {
+            height: 100px;
+            resize: vertical;
+          }
+        }   
+        
+        .button-container {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          margin-top: 40px;
+          
+            button {
+              width: 200px;
+              height: 40px;
+              cursor: pointer;
+              margin: 0;
+              @include button-style(map-get($colors, "button-bg"), map-get($colors, white), map-get($colors, "button-bg"));
+            }
+        }
+      }
+    }
+
+    .form-row, .contact-row {
+      display: flex;
+      justify-content: start;
+      gap: 10px;
+    
+      .input-field {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px; 
+      }
+    }
+    
+    .contact-row {
+      margin-top: 20px; 
+    }
+    
+   #nombre, #apellido, #telefono, #email{
+    width: 45%;
+   } 
+   .required {
+    color: red;
+  }
 
 footer {
   position: relative; 

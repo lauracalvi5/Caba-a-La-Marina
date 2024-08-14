@@ -6,8 +6,6 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Servir archivos estáticos
-app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware para parsear el cuerpo de las solicitudes
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,8 +13,11 @@ app.use(bodyParser.json());
 
 // Ruta para la raíz
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'contacto.html'));
+  res.sendFile(path.join(__dirname, 'public', 'contacto.html'));
 });
+
+// Servir archivos estáticos
+app.use(express.static('public'));
 
 // Ruta para manejar el formulario
 app.post('/submit-form', (req, res) => {

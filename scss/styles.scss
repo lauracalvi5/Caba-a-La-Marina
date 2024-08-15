@@ -527,6 +527,71 @@ header {
     color: red;
   }
 
+  @media (max-width: 768px) {
+    .form-container {
+      flex-direction: column !important;
+      align-items: center;
+  
+      .contact-form, .contact-info {
+        width: 100% ;
+        flex: none;
+        min-height: auto;
+        margin-bottom: 20px;
+      }
+  
+      .contact-info {
+        order: 2 !important; 
+      }
+  
+      .contact-form {
+        order: 1 !important;
+      }
+  
+      h15, h16 {
+        margin-left: 0;
+        text-align: center;
+      }
+  
+      h15 {
+        font-size: 14px !important; /* Ajusta el tamaño de la fuente para móviles */
+      }
+  
+      h16 {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para móviles */
+      }
+  
+      h17 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente para móviles */
+        text-align: center;
+      }
+  
+  
+  
+      h17::after {
+        width: 50%; /* Reduce el ancho de la línea en móviles */
+      }
+    
+  
+    #nombre, #apellido, #telefono, #email {
+      width: 100%; /* Asegúrate de que los campos ocupen todo el ancho en móviles */
+    }
+  
+    .form-row, .contact-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .button-container {
+      justify-content: center;
+  
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+  
+
 footer {
   position: relative; 
   margin-top: 40px;

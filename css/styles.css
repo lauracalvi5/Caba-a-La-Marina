@@ -448,6 +448,7 @@ header nav ul.navbar-nav li a:hover {
   .form-container h15, .form-container h16 {
     margin-left: 0 !important;
     text-align: center !important;
+    font-family: "Quicksand" !important;
   }
   .form-container h15 {
     font-size: 24px !important; /* Ajusta el tamaño de la fuente para móviles */

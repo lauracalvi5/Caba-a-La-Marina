@@ -528,6 +528,9 @@ header {
   }
 
   @media (max-width: 768px) {
+    h14{
+      font-family: 'Courier New', Courier, monospace;
+    }
     .form-container {
       flex-direction: column !important;
       align-items: center;
@@ -568,7 +571,7 @@ header {
   
   
       h17::after {
-        width: 50%; /* Reduce el ancho de la línea en móviles */
+        width: 80% !important; /* Reduce el ancho de la línea en móviles */
       }
     
   

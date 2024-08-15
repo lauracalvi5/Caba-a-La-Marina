@@ -429,6 +429,9 @@ header nav ul.navbar-nav li a:hover {
 }
 
 @media (max-width: 768px) {
+  h14 {
+    font-family: "Courier New", Courier, monospace;
+  }
   .form-container {
     flex-direction: column !important;
     align-items: center;
@@ -460,7 +463,7 @@ header nav ul.navbar-nav li a:hover {
     text-align: center;
   }
   .form-container h17::after {
-    width: 50%; /* Reduce el ancho de la línea en móviles */
+    width: 80% !important; /* Reduce el ancho de la línea en móviles */
   }
   .form-container #nombre, .form-container #apellido, .form-container #telefono, .form-container #email {
     width: 100%; /* Asegúrate de que los campos ocupen todo el ancho en móviles */

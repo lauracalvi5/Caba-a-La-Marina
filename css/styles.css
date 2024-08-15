@@ -139,7 +139,7 @@ header nav ul.navbar-nav li a:hover {
   border-width: 1px;
   border-style: solid;
   border-radius: 2px;
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #ffffff;
   text-align: center;
   display: block;
@@ -210,7 +210,7 @@ header nav ul.navbar-nav li a:hover {
   align-items: center;
 }
 #contacto h13 {
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 50px;
   text-align: center;
   display: block;
@@ -226,7 +226,7 @@ header nav ul.navbar-nav li a:hover {
   border-bottom: 4px solid #948D83;
 }
 #contacto h14 {
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   display: block;
   margin: auto;
@@ -234,7 +234,7 @@ header nav ul.navbar-nav li a:hover {
   font-weight: bold;
 }
 #contacto .h14 {
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   display: block;
   margin: auto;
@@ -284,7 +284,7 @@ header nav ul.navbar-nav li a:hover {
   margin-right: 15px;
 }
 #contacto .form-container .contact-info .info-item span {
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   display: block;
   margin: auto;
@@ -295,7 +295,7 @@ header nav ul.navbar-nav li a:hover {
   margin-right: 8px;
 }
 #contacto .form-container h15 {
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   display: block;
   margin: auto;
@@ -309,7 +309,7 @@ header nav ul.navbar-nav li a:hover {
   margin-bottom: 0px;
 }
 #contacto .form-container h16 {
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   display: block;
   margin: auto;
@@ -320,7 +320,7 @@ header nav ul.navbar-nav li a:hover {
 }
 #contacto .form-container h17 {
   position: relative;
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
@@ -347,7 +347,7 @@ header nav ul.navbar-nav li a:hover {
   transform: translateX(-50%);
 }
 #contacto .form-container p {
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   display: block;
   margin: auto;
@@ -355,7 +355,7 @@ header nav ul.navbar-nav li a:hover {
   margin-top: 0px;
 }
 #contacto .form-container form label {
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -367,7 +367,7 @@ header nav ul.navbar-nav li a:hover {
   padding: 10px;
   border: 1px solid #2e2c2a;
   border-radius: 4px;
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   color: #221400;
 }
@@ -393,7 +393,7 @@ header nav ul.navbar-nav li a:hover {
   border-width: 1px;
   border-style: solid;
   border-radius: 2px;
-  font-family: "Quicksand", "Italiana", "Italianno", sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #ffffff;
   text-align: center;
   display: block;

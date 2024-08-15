@@ -566,11 +566,19 @@ header {
       h17 {
         font-size: 24px; /* Ajusta el tamaño de la fuente para móviles */
         text-align: center !important;
+        //margin-left: -30px !important;
+        margin-left: 0 !important; /* Elimina el margen izquierdo */
+        margin-right: 0 !important; /* Elimina el margen derecho */
+        display: block !important;
+        width: 100% !important; 
       }
   
   
   
       h17::after {
+        content: '';
+        display: block;
+        margin: 0 auto;
         width: 80% !important; /* Reduce el ancho de la línea en móviles */
       }
     

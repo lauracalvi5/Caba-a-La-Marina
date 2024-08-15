@@ -528,9 +528,6 @@ header {
   }
 
   @media (max-width: 768px) {
-    h14{
-      font-family: 'Courier New', Courier, monospace;
-    }
     .form-container {
       flex-direction: column !important;
       align-items: center;
@@ -551,21 +548,24 @@ header {
       }
   
       h15, h16 {
-        margin-left: 0;
-        text-align: center;
+        margin-left: 0 !important;
+        text-align: center !important;
       }
   
       h15 {
-        font-size: 14px !important; /* Ajusta el tamaño de la fuente para móviles */
+        font-size: 24px !important; /* Ajusta el tamaño de la fuente para móviles */
       }
   
       h16 {
-        font-size: 14px; /* Ajusta el tamaño de la fuente para móviles */
+        font-size: 14px;
+        word-wrap: break-word !important; /* Asegura que el texto se ajuste al contenedor */
+        word-break: break-all !important;
+        white-space: normal !important; 
       }
   
       h17 {
         font-size: 24px; /* Ajusta el tamaño de la fuente para móviles */
-        text-align: center;
+        text-align: center !important;
       }
   
   

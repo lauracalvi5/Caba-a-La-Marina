@@ -509,6 +509,14 @@ header nav ul.navbar-nav li a:hover {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 45px;
+  }
+  .section-subtitle {
+    font-size: 20px;
+  }
+}
 /* Sobre Nosotros */
 .section-title2 {
   width: 100%;
@@ -531,6 +539,15 @@ header nav ul.navbar-nav li a:hover {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .section-title2 {
+    font-size: 45px;
+  }
+  .section-subtitle2 {
+    font-size: 20px;
+  }
+}
+/* Footer */
 footer {
   position: relative;
   margin-top: 40px;

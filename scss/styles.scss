@@ -602,7 +602,50 @@ header {
     }
   }
 }
-  
+
+/* Galeria */
+.section-title{
+  width: 100%;
+  height: auto;
+  margin: 0 auto; 
+  font-family: 'Italiana';
+  font-size: 100px;
+  line-height: 150%;
+  color: map-get($colors, secondary);
+  text-align: center;
+}
+
+.section-subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #2e2c2a; /* Ajusta este color según la paleta de tu sitio */
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Sobre Nosotros */
+.section-title2 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto; 
+  font-family: 'Italiana';
+  font-size: 100px;
+  line-height: 150%;
+  color: map-get($colors, secondary);
+  text-align: center;
+}
+
+.section-subtitle2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #2e2c2a; /* Ajusta este color según la paleta de tu sitio */
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
 
 footer {
   position: relative; 
